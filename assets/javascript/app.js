@@ -647,6 +647,9 @@ function result() {
 
 	$('#unansweredCount').html('<div>Unanswered: ' + unanswered + '</div>');
 
+	$('#reset').on('click', function() {
+		location.reload();
+	});
 }
 
 function stop() {

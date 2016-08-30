@@ -87,7 +87,8 @@ ul,
 
 li,
 #incorrectCount,
-#unansweredCount {
+#unansweredCount,
+#reset {
 	margin-top: 15px;
 }
 
