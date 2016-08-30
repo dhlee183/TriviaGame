@@ -46,7 +46,7 @@ function decrement1() {
 		$('#timer').html('Times Up!');
 		$('#questionOne').remove();
 		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
-		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
+		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=300>');
 		$('#choice3').hide();
 		$('#choice4').hide();
 		setTimeout(question2, 2000);
@@ -65,7 +65,7 @@ function question1() {
 		correct++;
 		stop();
 		$('#questionOne').html('<div>Correct!</div>');
-		$('#choice1').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
+		$('#choice1').replaceWith('<img src=assets/images/jaime.gif height=200 width=300>');
 		$('#choice2').hide();
 		$('#choice3').hide();
 		$('#choice4').hide();
@@ -77,7 +77,7 @@ function question1() {
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
 		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
-		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
+		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=300>');
 		$('#choice3').hide();
 		$('#choice4').hide();
 		setTimeout(question2, 2000);
@@ -88,7 +88,7 @@ function question1() {
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
 		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
-		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
+		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=300>');
 		$('#choice3').hide();
 		$('#choice4').hide();
 		setTimeout(question2, 2000);
@@ -99,7 +99,7 @@ function question1() {
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
 		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
-		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
+		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=300>');
 		$('#choice3').hide();
 		$('#choice4').hide();
 		setTimeout(question2, 2000);
@@ -117,7 +117,7 @@ function decrement2() {
 		$('#timer').html('Times Up!');
 		$('#questionTwo').remove();
 		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
-		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
+		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=300>');
 		$('#choice7').hide();
 		$('#choice8').hide();
 		setTimeout(question3, 2000);
@@ -142,7 +142,7 @@ function question2() {
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
 		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
-		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
+		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=300>');
 		$('#choice7').hide();
 		$('#choice8').hide();
 		setTimeout(question3, 2000);
@@ -153,7 +153,7 @@ function question2() {
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
 		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
-		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
+		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=300>');
 		$('#choice7').hide();
 		$('#choice8').hide();
 		setTimeout(question3, 2000);
@@ -163,7 +163,7 @@ function question2() {
 		correct++;
 		stop();
 		$('#questionTwo').html('<div>Correct!</div>');
-		$('#choice5').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
+		$('#choice5').replaceWith('<img src=assets/images/ghost.gif height=200 width=300>');
 		$('#choice6').hide();
 		$('#choice7').hide();
 		$('#choice8').hide();
@@ -175,7 +175,7 @@ function question2() {
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
 		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
-		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200s>');
+		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=300s>');
 		$('#choice7').hide();
 		$('#choice8').hide();
 		setTimeout(question3, 2000);
@@ -193,7 +193,7 @@ function decrement3() {
 		$('#timer').html('Times Up!');
 		$('#questionThree').remove();
 		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
-		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
+		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=300>');
 		$('#choice11').hide();
 		$('#choice12').hide();
 		setTimeout(question4, 2000);
@@ -218,7 +218,7 @@ function question3() {
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
 		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
-		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
+		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=300>');
 		$('#choice11').hide();
 		$('#choice12').hide();
 		setTimeout(question4, 2000);
@@ -228,7 +228,7 @@ function question3() {
 		correct++;
 		stop();
 		$('#questionThree').html('<div>Correct!</div>');
-		$('#choice9').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
+		$('#choice9').replaceWith('<img src=assets/images/wildfire.gif height=200 width=300>');
 		$('#choice10').hide();
 		$('#choice11').hide();
 		$('#choice12').hide();
@@ -240,7 +240,7 @@ function question3() {
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
 		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
-		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
+		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=300>');
 		$('#choice11').hide();
 		$('#choice12').hide();
 		setTimeout(question4, 2000);
@@ -251,7 +251,7 @@ function question3() {
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
 		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
-		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200s>');
+		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=300s>');
 		$('#choice11').hide();
 		$('#choice12').hide();
 		setTimeout(question4, 2000);
@@ -268,7 +268,7 @@ function decrement4() {
 		$('#timer').html('Times Up!');
 		$('#questionFour').remove();
 		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
-		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
+		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=300>');
 		$('#choice15').hide();
 		$('#choice16').hide();
 		setTimeout(question5, 2000);
@@ -293,7 +293,7 @@ function question4() {
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
 		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
-		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
+		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=300>');
 		$('#choice15').hide();
 		$('#choice16').hide();
 		setTimeout(question5, 2000);
@@ -304,7 +304,7 @@ function question4() {
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
 		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
-		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
+		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=300>');
 		$('#choice15').hide();
 		$('#choice16').hide();
 		setTimeout(question5, 2000);
@@ -315,7 +315,7 @@ function question4() {
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
 		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
-		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
+		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=300>');
 		$('#choice15').hide();
 		$('#choice16').hide();
 		setTimeout(question5, 2000);
@@ -325,7 +325,7 @@ function question4() {
 		correct++;
 		stop();
 		$('#questionFour').html('<div>Correct!</div>');
-		$('#choice13').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
+		$('#choice13').replaceWith('<img src=assets/images/redwedding.gif height=200 width=300>');
 		$('#choice14').hide();
 		$('#choice15').hide();
 		$('#choice16').hide();
@@ -343,7 +343,7 @@ function decrement5() {
 		$('#timer').html('Times Up!');
 		$('#questionFive').remove();
 		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
-		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
+		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=300>');
 		$('#choice19').hide();
 		$('#choice20').hide();
 		setTimeout(question6, 2000);
@@ -368,7 +368,7 @@ function question5() {
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
 		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
-		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
+		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=300>');
 		$('#choice19').hide();
 		$('#choice20').hide();
 		setTimeout(question6, 2000);
@@ -379,7 +379,7 @@ function question5() {
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
 		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
-		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
+		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=300>');
 		$('#choice19').hide();
 		$('#choice20').hide();
 		setTimeout(question6, 2000);
@@ -390,7 +390,7 @@ function question5() {
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
 		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
-		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
+		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=300>');
 		$('#choice19').hide();
 		$('#choice20').hide();
 		setTimeout(question6, 2000);
@@ -400,7 +400,7 @@ function question5() {
 		correct++;
 		stop();
 		$('#questionFive').html('<div>Correct!</div>');
-		$('#choice17').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
+		$('#choice17').replaceWith('<img src=assets/images/mountain.gif height=200 width=300>');
 		$('#choice18').hide();
 		$('#choice19').hide();
 		$('#choice20').hide();
@@ -418,7 +418,7 @@ function decrement6() {
 		$('#timer').html('Times Up!');
 		$('#questionSix').remove();
 		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
-		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>')
+		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=300>')
 		$('#choice23').hide();
 		$('#choice24').hide();
 		setTimeout(question7, 2000);
@@ -443,7 +443,7 @@ function question6() {
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
 		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
-		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>')
+		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=300>')
 		$('#choice23').hide();
 		$('#choice24').hide();
 		setTimeout(question7, 2000);
@@ -453,7 +453,7 @@ function question6() {
 		correct++;
 		stop();
 		$('#questionSix').html('<div>Correct!</div>');
-		$('#choice21').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
+		$('#choice21').replaceWith('<img src=assets/images/tsigil.gif height=200 width=300>');
 		$('#choice22').hide();
 		$('#choice23').hide();
 		$('#choice24').hide();
@@ -465,7 +465,7 @@ function question6() {
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
 		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
-		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
+		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=300>');
 		$('#choice23').hide();
 		$('#choice24').hide();
 		setTimeout(question7, 2000);
@@ -476,7 +476,7 @@ function question6() {
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
 		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
-		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
+		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=300>');
 		$('#choice23').hide();
 		$('#choice24').hide();
 		setTimeout(question7, 2000);
@@ -493,7 +493,7 @@ function decrement7() {
 		$('#timer').html('Times Up!');
 		$('#questionSeven').remove();
 		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
-		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
+		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=300>');
 		$('#choice27').hide();
 		$('#choice28').hide();
 		setTimeout(question8, 2000);
@@ -518,7 +518,7 @@ function question7() {
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
 		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
-		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
+		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=300>');
 		$('#choice27').hide();
 		$('#choice28').hide();
 		setTimeout(question8, 2000);
@@ -528,7 +528,7 @@ function question7() {
 		correct++;
 		stop();
 		$('#questionSeven').html('<div>Correct!</div>');
-		$('#choice25').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
+		$('#choice25').replaceWith('<img src=assets/images/forest.gif height=200 width=300>');
 		$('#choice26').hide();
 		$('#choice27').hide();
 		$('#choice28').hide();
@@ -540,7 +540,7 @@ function question7() {
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
 		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
-		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
+		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=300>');
 		$('#choice27').hide();
 		$('#choice28').hide();
 		setTimeout(question8, 2000);
@@ -551,7 +551,7 @@ function question7() {
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
 		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
-		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
+		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=300>');
 		$('#choice27').hide();
 		$('#choice28').hide();
 		setTimeout(question8, 2000);
@@ -568,7 +568,7 @@ function decrement8() {
 		$('#timer').html('Times Up!');
 		$('#questionEight').remove();
 		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
-		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
+		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=300>');
 		$('#choice31').hide();
 		$('#choice32').hide();
 		setTimeout(result, 2000);
@@ -593,7 +593,7 @@ function question8() {
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
 		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
-		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
+		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=300>');
 		$('#choice31').hide();
 		$('#choice32').hide();
 		setTimeout(result, 2000);
@@ -605,7 +605,7 @@ function question8() {
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
 		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
-		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
+		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=300>');
 		$('#choice31').hide();
 		$('#choice32').hide();
 		setTimeout(result, 2000);
@@ -616,7 +616,7 @@ function question8() {
 		correct++;
 		stop();
 		$('#questionEight').html('<div>Correct!</div>');
-		$('#choice29').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
+		$('#choice29').replaceWith('<img src=assets/images/resurrect.gif height=200 width=300>');
 		$('#choice30').hide();
 		$('#choice31').hide();
 		$('#choice32').hide();
@@ -629,7 +629,7 @@ function question8() {
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
 		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
-		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
+		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=300>');
 		$('#choice31').hide();
 		$('#choice32').hide();
 		setTimeout(result, 2000);
