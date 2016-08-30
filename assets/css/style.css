@@ -9,7 +9,14 @@ h1 {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-h2,
+h2 {
+	color: darkred;
+	font-size: 40px;
+	font: bold;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	margin-top: 25px;
+}
+
 #correctCount,
 #incorrectCount,
 #unansweredCount,
@@ -24,17 +31,17 @@ h2,
 .container2 {
 	height: 600px;
 	width: 1200px;
-	margin-left: 325px;
+	margin-left: 40px;
 	margin-top: 50px;
 	text-align: center;
-	background: black;
 }
 
 #timer {
 	color: darkred;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 40px;
-	margin-top: 50px;
+	font: bold;
+	margin-top: 90px;
 }
 
 #questionOne,
@@ -62,7 +69,7 @@ h2,
 #section6,
 #section7,
 #section8 {
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 button {
@@ -73,11 +80,14 @@ button {
 	border: none;
 }
 
-ul{
+ul,
+#correctCount {
 	margin-top: 25px;
 }
 
-li {
+li,
+#incorrectCount,
+#unansweredCount {
 	margin-top: 15px;
 }
 
