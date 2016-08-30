@@ -1,4 +1,5 @@
 window.onload = function() {
+	audio.play();
 	$('.container2').hide();
 	$('#start').on('click', function() {
 		$('.container1').hide();
@@ -7,6 +8,7 @@ window.onload = function() {
 	});
 };
 
+var audio = new Audio('assets/images/Game of Thrones - Main Theme (Official Soundtrack Extended Version).mp3')
 var timerStart = 15;
 var number = timerStart;
 var correct = 0;
