@@ -1,13 +1,13 @@
 window.onload = function() {
 	$('.container2').hide();
 	$('#start').on('click', function() {
-		$('.container1').fadeOut();
+		$('.container1').hide();
 		$('.container2').fadeIn();
 		run();
 	});
 };
 
-var timerStart = 20;
+var timerStart = 15;
 var number = timerStart;
 var correct = 0;
 var incorrect = 0;
@@ -43,10 +43,10 @@ function decrement1() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionOne').remove();
-		$('#choice1').replaceWith('<div>' + choices1[0] + '</div>');
+		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
 		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
-		$('#choice3').remove();
-		$('#choice4').remove();
+		$('#choice3').hide();
+		$('#choice4').hide();
 		setTimeout(question2, 2000);
 	}
 }
@@ -64,9 +64,9 @@ function question1() {
 		stop();
 		$('#questionOne').html('<div>Correct!</div>');
 		$('#choice1').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
-		$('#choice2').remove();
-		$('#choice3').remove();
-		$('#choice4').remove();
+		$('#choice2').hide();
+		$('#choice3').hide();
+		$('#choice4').hide();
 		setTimeout(question2, 2000);
 	})
 
@@ -74,10 +74,10 @@ function question1() {
 		incorrect++;
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
-		$('#choice1').replaceWith('<div>' + choices1[0] + '</div>');
+		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
 		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
-		$('#choice3').remove();
-		$('#choice4').remove();
+		$('#choice3').hide();
+		$('#choice4').hide();
 		setTimeout(question2, 2000);
 	});
 
@@ -85,10 +85,10 @@ function question1() {
 		incorrect++;
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
-		$('#choice1').replaceWith('<div>' + choices1[0] + '</div>');
+		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
 		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
-		$('#choice3').remove();
-		$('#choice4').remove();
+		$('#choice3').hide();
+		$('#choice4').hide();
 		setTimeout(question2, 2000);
 	});
 
@@ -96,10 +96,10 @@ function question1() {
 		incorrect++;
 		stop();
 		$('#questionOne').html('<div>Wrong!</div>');
-		$('#choice1').replaceWith('<div>' + choices1[0] + '</div>');
+		$('#choice1').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices1[0] + '</div>');
 		$('#choice2').replaceWith('<img src=assets/images/jaime.gif height=200 width=200>');
-		$('#choice3').remove();
-		$('#choice4').remove();
+		$('#choice3').hide();
+		$('#choice4').hide();
 		setTimeout(question2, 2000);
 	});
 
@@ -114,16 +114,16 @@ function decrement2() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionTwo').remove();
-		$('#choice5').replaceWith('<div>' + choices2[2] + '</div>');
+		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
 		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
-		$('#choice7').remove();
-		$('#choice8').remove();
+		$('#choice7').hide();
+		$('#choice8').hide();
 		setTimeout(question3, 2000);
 	}	
 }
 
 function question2() {
-	$('#section1').remove();
+	$('#section1').hide();
 	$('#section2').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement2, 1000);
@@ -139,10 +139,10 @@ function question2() {
 		incorrect++;
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
-		$('#choice5').replaceWith('<div>' + choices2[2] + '</div>');
+		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
 		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
-		$('#choice7').remove();
-		$('#choice8').remove();
+		$('#choice7').hide();
+		$('#choice8').hide();
 		setTimeout(question3, 2000);
 	})
 
@@ -150,10 +150,10 @@ function question2() {
 		incorrect++
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
-		$('#choice5').replaceWith('<div>' + choices2[2] + '</div>');
+		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
 		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
-		$('#choice7').remove();
-		$('#choice8').remove();
+		$('#choice7').hide();
+		$('#choice8').hide();
 		setTimeout(question3, 2000);
 	})
 
@@ -162,9 +162,9 @@ function question2() {
 		stop();
 		$('#questionTwo').html('<div>Correct!</div>');
 		$('#choice5').replaceWith('<img src=assets/images/ghost.gif height=200 width=200>');
-		$('#choice6').remove();
-		$('#choice7').remove();
-		$('#choice8').remove();
+		$('#choice6').hide();
+		$('#choice7').hide();
+		$('#choice8').hide();
 		setTimeout(question3, 2000);
 	})	
 
@@ -172,10 +172,10 @@ function question2() {
 		incorrect++;
 		stop();
 		$('#questionTwo').html('<div>Wrong!</div>');
-		$('#choice5').replaceWith('<div>' + choices2[2] + '</div>');
+		$('#choice5').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices2[2] + '</div>');
 		$('#choice6').replaceWith('<img src=assets/images/ghost.gif height=200 width=200s>');
-		$('#choice7').remove();
-		$('#choice8').remove();
+		$('#choice7').hide();
+		$('#choice8').hide();
 		setTimeout(question3, 2000);
 	})
 
@@ -190,21 +190,21 @@ function decrement3() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionThree').remove();
-		$('#choice9').replaceWith('<div>' + choices3[1] + '</div>');
+		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
 		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
-		$('#choice11').remove();
-		$('#choice12').remove();
+		$('#choice11').hide();
+		$('#choice12').hide();
 		setTimeout(question4, 2000);
 	}	
 }
 
 function question3() {
-	$('#section2').remove();
+	$('#section2').hide();
 	$('#section3').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement3, 1000);
 
-	$('#questionThree').html("What's the name of the explosive that gave the Lannisters the edge in the Battle of Blackwater?");
+	$('#questionThree').html("What's the name of the explosive used in the Battle of Blackwater?");
 
 	$('#choice9').html(choices3[0]);
 	$('#choice10').html(choices3[1]);
@@ -215,10 +215,10 @@ function question3() {
 		incorrect++;
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
-		$('#choice9').replaceWith('<div>' + choices3[1] + '</div>');
+		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
 		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
-		$('#choice11').remove();
-		$('#choice12').remove();
+		$('#choice11').hide();
+		$('#choice12').hide();
 		setTimeout(question4, 2000);
 	})
 
@@ -227,9 +227,9 @@ function question3() {
 		stop();
 		$('#questionThree').html('<div>Correct!</div>');
 		$('#choice9').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
-		$('#choice10').remove();
-		$('#choice11').remove();
-		$('#choice12').remove();
+		$('#choice10').hide();
+		$('#choice11').hide();
+		$('#choice12').hide();
 		setTimeout(question4, 2000);
 	})
 
@@ -237,10 +237,10 @@ function question3() {
 		incorrect++;
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
-		$('#choice9').replaceWith('<div>' + choices3[1] + '</div>');
+		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
 		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200>');
-		$('#choice11').remove();
-		$('#choice12').remove();
+		$('#choice11').hide();
+		$('#choice12').hide();
 		setTimeout(question4, 2000);
 	})	
 
@@ -248,10 +248,10 @@ function question3() {
 		incorrect++;
 		stop();
 		$('#questionThree').html('<div>Wrong!</div>');
-		$('#choice9').replaceWith('<div>' + choices3[1] + '</div>');
+		$('#choice9').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices3[1] + '</div>');
 		$('#choice10').replaceWith('<img src=assets/images/wildfire.gif height=200 width=200s>');
-		$('#choice11').remove();
-		$('#choice12').remove();
+		$('#choice11').hide();
+		$('#choice12').hide();
 		setTimeout(question4, 2000);
 	})
 }
@@ -265,16 +265,16 @@ function decrement4() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionFour').remove();
-		$('#choice13').replaceWith('<div>' + choices4[3] + '</div>');
+		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
 		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
-		$('#choice15').remove();
-		$('#choice16').remove();
+		$('#choice15').hide();
+		$('#choice16').hide();
 		setTimeout(question5, 2000);
 	}	
 }
 
 function question4() {
-	$('#section3').remove();
+	$('#section3').hide();
 	$('#section4').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement4, 1000);
@@ -290,10 +290,10 @@ function question4() {
 		incorrect++;
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
-		$('#choice13').replaceWith('<div>' + choices4[3] + '</div>');
+		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
 		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
-		$('#choice15').remove();
-		$('#choice16').remove();
+		$('#choice15').hide();
+		$('#choice16').hide();
 		setTimeout(question5, 2000);
 	})
 
@@ -301,10 +301,10 @@ function question4() {
 		incorrect++
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
-		$('#choice13').replaceWith('<div>' + choices4[3] + '</div>');
+		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
 		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
-		$('#choice15').remove();
-		$('#choice16').remove();
+		$('#choice15').hide();
+		$('#choice16').hide();
 		setTimeout(question5, 2000);
 	})
 
@@ -312,10 +312,10 @@ function question4() {
 		incorrect++;
 		stop();
 		$('#questionFour').html('<div>Wrong!</div>');
-		$('#choice13').replaceWith('<div>' + choices4[3] + '</div>');
+		$('#choice13').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices4[3] + '</div>');
 		$('#choice14').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
-		$('#choice15').remove();
-		$('#choice16').remove();
+		$('#choice15').hide();
+		$('#choice16').hide();
 		setTimeout(question5, 2000);
 	})	
 
@@ -324,9 +324,9 @@ function question4() {
 		stop();
 		$('#questionFour').html('<div>Correct!</div>');
 		$('#choice13').replaceWith('<img src=assets/images/redwedding.gif height=200 width=200>');
-		$('#choice14').remove();
-		$('#choice15').remove();
-		$('#choice16').remove();
+		$('#choice14').hide();
+		$('#choice15').hide();
+		$('#choice16').hide();
 		setTimeout(question5, 2000);
 	})
 }
@@ -340,16 +340,16 @@ function decrement5() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionFive').remove();
-		$('#choice17').replaceWith('<div>' + choices5[3] + '</div>');
+		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
 		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
-		$('#choice19').remove();
-		$('#choice20').remove();
+		$('#choice19').hide();
+		$('#choice20').hide();
 		setTimeout(question6, 2000);
 	}	
 }
 
 function question5() {
-	$('#section4').remove();
+	$('#section4').hide();
 	$('#section5').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement5, 1000);
@@ -365,10 +365,10 @@ function question5() {
 		incorrect++;
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
-		$('#choice17').replaceWith('<div>' + choices5[3] + '</div>');
+		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
 		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
-		$('#choice19').remove();
-		$('#choice20').remove();
+		$('#choice19').hide();
+		$('#choice20').hide();
 		setTimeout(question6, 2000);
 	})
 
@@ -376,10 +376,10 @@ function question5() {
 		incorrect++;
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
-		$('#choice17').replaceWith('<div>' + choices5[3] + '</div>');
+		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
 		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
-		$('#choice19').remove();
-		$('#choice20').remove();
+		$('#choice19').hide();
+		$('#choice20').hide();
 		setTimeout(question6, 2000);
 	})
 
@@ -387,10 +387,10 @@ function question5() {
 		incorrect++;
 		stop();
 		$('#questionFive').html('<div>Wrong!</div>');
-		$('#choice17').replaceWith('<div>' + choices5[3] + '</div>');
+		$('#choice17').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices5[3] + '</div>');
 		$('#choice18').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
-		$('#choice19').remove();
-		$('#choice20').remove();
+		$('#choice19').hide();
+		$('#choice20').hide();
 		setTimeout(question6, 2000);
 	})	
 
@@ -399,9 +399,9 @@ function question5() {
 		stop();
 		$('#questionFive').html('<div>Correct!</div>');
 		$('#choice17').replaceWith('<img src=assets/images/mountain.gif height=200 width=200>');
-		$('#choice18').remove();
-		$('#choice19').remove();
-		$('#choice20').remove();
+		$('#choice18').hide();
+		$('#choice19').hide();
+		$('#choice20').hide();
 		setTimeout(question6, 2000);
 	})
 }
@@ -415,16 +415,16 @@ function decrement6() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionSix').remove();
-		$('#choice21').replaceWith('<div>' + choices6[1] + '</div>');
+		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
 		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>')
-		$('#choice23').remove();
-		$('#choice24').remove();
+		$('#choice23').hide();
+		$('#choice24').hide();
 		setTimeout(question7, 2000);
 	}	
 }
 
 function question6() {
-	$('#section5').remove();
+	$('#section5').hide();
 	$('#section6').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement6, 1000);
@@ -440,10 +440,10 @@ function question6() {
 		incorrect++;
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
-		$('#choice21').replaceWith('<div>' + choices6[1] + '</div>');
+		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
 		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>')
-		$('#choice23').remove();
-		$('#choice24').remove();
+		$('#choice23').hide();
+		$('#choice24').hide();
 		setTimeout(question7, 2000);
 	})
 
@@ -452,9 +452,9 @@ function question6() {
 		stop();
 		$('#questionSix').html('<div>Correct!</div>');
 		$('#choice21').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
-		$('#choice22').remove();
-		$('#choice23').remove();
-		$('#choice24').remove();
+		$('#choice22').hide();
+		$('#choice23').hide();
+		$('#choice24').hide();
 		setTimeout(question7, 2000);
 	})
 
@@ -462,10 +462,10 @@ function question6() {
 		incorrect++;
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
-		$('#choice21').replaceWith('<div>' + choices6[1] + '</div>');
+		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
 		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
-		$('#choice23').remove();
-		$('#choice24').remove();
+		$('#choice23').hide();
+		$('#choice24').hide();
 		setTimeout(question7, 2000);
 	})	
 
@@ -473,10 +473,10 @@ function question6() {
 		incorrect++;
 		stop();
 		$('#questionSix').html('<div>Wrong!</div>');
-		$('#choice21').replaceWith('<div>' + choices6[1] + '</div>');
+		$('#choice21').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices6[1] + '</div>');
 		$('#choice22').replaceWith('<img src=assets/images/tsigil.gif height=200 width=200>');
-		$('#choice23').remove();
-		$('#choice24').remove();
+		$('#choice23').hide();
+		$('#choice24').hide();
 		setTimeout(question7, 2000);
 	})
 }
@@ -490,16 +490,16 @@ function decrement7() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionSeven').remove();
-		$('#choice25').replaceWith('<div>' + choices7[1] + '</div>');
+		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
 		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
-		$('#choice27').remove();
-		$('#choice28').remove();
+		$('#choice27').hide();
+		$('#choice28').hide();
 		setTimeout(question8, 2000);
 	}	
 }
 
 function question7() {
-	$('#section6').remove();
+	$('#section6').hide();
 	$('#section7').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement7, 1000);
@@ -515,10 +515,10 @@ function question7() {
 		incorrect++;
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
-		$('#choice25').replaceWith('<div>' + choices7[1] + '</div>');
+		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
 		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
-		$('#choice27').remove();
-		$('#choice28').remove();
+		$('#choice27').hide();
+		$('#choice28').hide();
 		setTimeout(question8, 2000);
 	})
 
@@ -527,9 +527,9 @@ function question7() {
 		stop();
 		$('#questionSeven').html('<div>Correct!</div>');
 		$('#choice25').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
-		$('#choice26').remove();
-		$('#choice27').remove();
-		$('#choice28').remove();
+		$('#choice26').hide();
+		$('#choice27').hide();
+		$('#choice28').hide();
 		setTimeout(question8, 2000);
 	})
 
@@ -537,10 +537,10 @@ function question7() {
 		incorrect++;
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
-		$('#choice25').replaceWith('<div>' + choices7[1] + '</div>');
+		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
 		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
-		$('#choice27').remove();
-		$('#choice28').remove();
+		$('#choice27').hide();
+		$('#choice28').hide();
 		setTimeout(question8, 2000);
 	})	
 
@@ -548,10 +548,10 @@ function question7() {
 		incorrect++;
 		stop();
 		$('#questionSeven').html('<div>Wrong!</div>');
-		$('#choice25').replaceWith('<div>' + choices7[1] + '</div>');
+		$('#choice25').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices7[1] + '</div>');
 		$('#choice26').replaceWith('<img src=assets/images/forest.gif height=200 width=200>');
-		$('#choice27').remove();
-		$('#choice28').remove();
+		$('#choice27').hide();
+		$('#choice28').hide();
 		setTimeout(question8, 2000);
 	})
 }
@@ -565,16 +565,16 @@ function decrement8() {
 		unanswered++;
 		$('#timer').html('Times Up!');
 		$('#questionEight').remove();
-		$('#choice29').replaceWith('<div>' + choices8[2] + '</div>');
+		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
 		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
-		$('#choice31').remove();
-		$('#choice32').remove();
+		$('#choice31').hide();
+		$('#choice32').hide();
 		setTimeout(result, 2000);
 	}	
 }
 
 function question8() {
-	$('#section7').remove();
+	$('#section7').hide();
 	$('#section8').fadeIn();
 	number = timerStart;
 	counter = setInterval(decrement8, 1000);
@@ -590,10 +590,10 @@ function question8() {
 		incorrect++;
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
-		$('#choice29').replaceWith('<div>' + choices8[2] + '</div>');
+		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
 		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
-		$('#choice31').remove();
-		$('#choice32').remove();
+		$('#choice31').hide();
+		$('#choice32').hide();
 		setTimeout(result, 2000);
 		
 	})
@@ -602,10 +602,10 @@ function question8() {
 		incorrect++;
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
-		$('#choice29').replaceWith('<div>' + choices8[2] + '</div>');
+		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
 		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
-		$('#choice31').remove();
-		$('#choice32').remove();
+		$('#choice31').hide();
+		$('#choice32').hide();
 		setTimeout(result, 2000);
 		
 	})
@@ -615,9 +615,9 @@ function question8() {
 		stop();
 		$('#questionEight').html('<div>Correct!</div>');
 		$('#choice29').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
-		$('#choice30').remove();
-		$('#choice31').remove();
-		$('#choice32').remove();
+		$('#choice30').hide();
+		$('#choice31').hide();
+		$('#choice32').hide();
 		setTimeout(result, 2000);
 	
 	})	
@@ -626,17 +626,17 @@ function question8() {
 		incorrect++;
 		stop();
 		$('#questionEight').html('<div>Wrong!</div>');
-		$('#choice29').replaceWith('<div>' + choices8[2] + '</div>');
+		$('#choice29').replaceWith('<div style="color: darkred; font-size: 40px; font: bold; font-family: Arial, Helvetica Neue, Helvetica, sans-serif">' + choices8[2] + '</div>');
 		$('#choice30').replaceWith('<img src=assets/images/resurrect.gif height=200 width=200>');
-		$('#choice31').remove();
-		$('#choice32').remove();
+		$('#choice31').hide();
+		$('#choice32').hide();
 		setTimeout(result, 2000);
 	
 	})
 }
 
 function result() {
-	$('#section8').remove();
+	$('#section8').hide();
 	$('#section9').fadeIn();
 
 	$('#correctCount').html('<div>Correct: ' + correct + '</div>')
