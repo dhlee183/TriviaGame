@@ -1,3 +1,4 @@
+$(document).ready(function() {
 window.onload = function() {
 	audio.play();
 	$('.container2').hide();
@@ -648,10 +649,11 @@ function result() {
 	$('#unansweredCount').html('<div>Unanswered: ' + unanswered + '</div>');
 
 	$('#reset').on('click', function() {
-		location.reload();
+		document.location.reload(true);
 	});
 }
 
 function stop() {
 	clearInterval(counter);
 }
+});
